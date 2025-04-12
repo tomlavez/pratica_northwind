@@ -8,7 +8,7 @@ def demonstrar_sql_injection():
     """
     
     # Injection em pesquisa de produto
-    print("=== SQL Injection na busca de produto ===")
+    print("\n=== SQL Injection na busca de produto ===")
 
     entrada_maliciosa_produto = "' OR unitprice = (SELECT MAX(unitprice) FROM northwind.products) --"
     

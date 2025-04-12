@@ -1,7 +1,7 @@
 import psycopg2
-from app.dao.base_dao import get_db_connection # Para pegar a conexão
-from app.model.driver_model import Orders, OrderDetails, Customers, Employees, Products # Importe os modelos adaptados que serão usados
-from datetime import date # Se for lidar com datas
+from app.dao.base_dao import get_db_connection
+from app.model.psycopg_model import Orders, OrderDetails, Customers, Employees, Products
+from datetime import date
 
 def _find_next_order_id() -> int | None:
     """
